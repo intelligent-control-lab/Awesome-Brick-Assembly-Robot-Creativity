@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 6 96 120" role="img" aria-labelledby="title">
+  <title id="title">Two connected studded toy bricks</title>
+  <g stroke-linejoin="round">
+    <!-- Blue foundation brick. -->
+    <path d="M8 48 44 30 88 52 52 70Z" fill="#60a5fa"/>
+    <path d="M8 48 52 70V88L8 66Z" fill="#2563eb"/>
+    <path d="M52 70 88 52V70L52 88Z" fill="#1e40af"/>
+    <g fill="#3b82f6" stroke="#1d4ed8" stroke-width="1">
+      <path d="M26 52v4a6 3 0 0 0 12 0v-4Z"/>
+      <path d="M42 60v4a6 3 0 0 0 12 0v-4Z"/>
+    </g>
+    <g fill="#93c5fd">
+      <ellipse cx="32" cy="52" rx="6" ry="3"/>
+      <ellipse cx="48" cy="60" rx="6" ry="3"/>
+    </g>
+    <!-- Red brick interlocks with the foundation. -->
+    <path d="M22 25 52 10 82 25 52 40Z" fill="#f87171"/>
+    <path d="M22 25 52 40V60L22 45Z" fill="#ef4444"/>
+    <path d="M52 40 82 25V45L52 60Z" fill="#b91c1c"/>
+    <g fill="#ef4444" stroke="#b91c1c" stroke-width="1">
+      <path d="M46 13v5a6 3 0 0 0 12 0v-5Z"/>
+      <path d="M31 21v5a6 3 0 0 0 12 0v-5Z"/>
+      <path d="M61 21v5a6 3 0 0 0 12 0v-5Z"/>
+      <path d="M46 29v5a6 3 0 0 0 12 0v-5Z"/>
+    </g>
+    <g fill="#fca5a5">
+      <ellipse cx="52" cy="13" rx="6" ry="3"/>
+      <ellipse cx="37" cy="21" rx="6" ry="3"/>
+      <ellipse cx="67" cy="21" rx="6" ry="3"/>
+      <ellipse cx="52" cy="29" rx="6" ry="3"/>
+    </g>
+  </g>
+</svg>
