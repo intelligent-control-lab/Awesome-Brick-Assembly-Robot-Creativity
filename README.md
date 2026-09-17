@@ -29,7 +29,6 @@ This repository curates research papers on generative brick assembly design, phy
 
 ## Surveys and Reviews
 
-Each review below discusses LEGO construction directly; the focus column distinguishes dedicated coverage from broader surveys.
 
 | Year | Paper | Focus | Links |
 |---:|---|---|---|
@@ -51,7 +50,7 @@ Generate and optimize brick assembly structures from text, images, geometry, or 
 | Year | Paper | Focus | Links |
 |---:|---|---|---|
 | 2026 | **BrickNet: Graph-Backed Generative Brick Assembly** (also supports unconditional generation) — CVPR 2026 | Introduces a connectivity-based graph representation for generating valid build sequences with thousands of brick types. | [Paper](https://arxiv.org/abs/2604.22984) · [Project](https://kulits.github.io/BrickNet/) |
-| 2025 | ★ **Generating Physically Stable and Buildable Brick Structures from Text (BrickGPT / LegoGPT)** — ICCV 2025, [Best Paper (Marr Prize)](https://www.thecvf.com/?page_id=413) | Generates text-conditioned brick structures with an autoregressive model and physics-aware checks that reject unstable placements. | [Paper](https://arxiv.org/abs/2505.05469) · [Project](https://avalovelace1.github.io/BrickGPT/) · [Code](https://github.com/AvaLovelace1/BrickGPT) · [Data](https://huggingface.co/datasets/AvaLovelace/StableText2Brick) |
+| 2025 | **Generating Physically Stable and Buildable Brick Structures from Text (BrickGPT / LegoGPT)** — ICCV 2025 | Generates text-conditioned brick structures with an autoregressive model and physics-aware checks that reject unstable placements. | [Paper](https://arxiv.org/abs/2505.05469) · [Project](https://avalovelace1.github.io/BrickGPT/) · [Code](https://github.com/AvaLovelace1/BrickGPT) · [Data](https://huggingface.co/datasets/AvaLovelace/StableText2Brick) |
 | 2025 | **LEGO-Maker: A Semantic-Driven Algorithm for Text-to-3D Generation** — ICCV 2025 | Decomposes text-driven 3D models into functional components and adds motion to the resulting modular assets. | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_LEGO-Maker_A_Semantic-Driven_Algorithm_for_Text-to-3D_Generation_ICCV_2025_paper.html) |
 
 ### From Images and Sketches
