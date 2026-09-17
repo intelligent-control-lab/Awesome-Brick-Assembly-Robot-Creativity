@@ -1,33 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 6 96 120" role="img" aria-labelledby="title">
-  <title id="title">Two connected studded toy bricks</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="12 12 116 116" role="img" aria-labelledby="title desc">
+  <title id="title">Two interlocking toy bricks</title>
+  <desc id="desc">A red two-by-two brick sits on a blue two-by-four brick, shown in isometric perspective.</desc>
+  <defs>
+    <linearGradient id="blue-top" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#a9dcff"/>
+      <stop offset="1" stop-color="#438df0"/>
+    </linearGradient>
+    <linearGradient id="blue-front" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#3b83e8"/>
+      <stop offset="1" stop-color="#2055bb"/>
+    </linearGradient>
+    <linearGradient id="red-top" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ffaaa0"/>
+      <stop offset="1" stop-color="#f15a4c"/>
+    </linearGradient>
+    <linearGradient id="red-front" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#e94c40"/>
+      <stop offset="1" stop-color="#ba2d28"/>
+    </linearGradient>
+    <g id="blue-stud">
+      <path d="M-6 0v4c0 1.7 2.7 3 6 3s6-1.3 6-3V0Z" fill="#2867ca" stroke="#1b4b9d" stroke-width=".7"/>
+      <ellipse rx="6" ry="3" fill="#9bd0ff" stroke="#397dcf" stroke-width=".7"/>
+      <path d="M-3.5-1c1.8-.8 4.1-.8 6 0" fill="none" stroke="#e3f3ff" stroke-linecap="round" stroke-width=".8" opacity=".75"/>
+    </g>
+    <g id="red-stud">
+      <path d="M-6 0v4c0 1.7 2.7 3 6 3s6-1.3 6-3V0Z" fill="#d93a32" stroke="#aa2925" stroke-width=".7"/>
+      <ellipse rx="6" ry="3" fill="#ffaaa1" stroke="#d74c42" stroke-width=".7"/>
+      <path d="M-3.5-1c1.8-.8 4.1-.8 6 0" fill="none" stroke="#ffe1dc" stroke-linecap="round" stroke-width=".8" opacity=".8"/>
+    </g>
+  </defs>
+
+  <!-- Lower brick: a four-by-two plate with the exposed studs on the right. -->
   <g stroke-linejoin="round">
-    <!-- Blue foundation brick. -->
-    <path d="M8 48 44 30 88 52 52 70Z" fill="#60a5fa"/>
-    <path d="M8 48 52 70V88L8 66Z" fill="#2563eb"/>
-    <path d="M52 70 88 52V70L52 88Z" fill="#1e40af"/>
-    <g fill="#3b82f6" stroke="#1d4ed8" stroke-width="1">
-      <path d="M26 52v4a6 3 0 0 0 12 0v-4Z"/>
-      <path d="M42 60v4a6 3 0 0 0 12 0v-4Z"/>
-    </g>
-    <g fill="#93c5fd">
-      <ellipse cx="32" cy="52" rx="6" ry="3"/>
-      <ellipse cx="48" cy="60" rx="6" ry="3"/>
-    </g>
-    <!-- Red brick interlocks with the foundation. -->
-    <path d="M22 25 52 10 82 25 52 40Z" fill="#f87171"/>
-    <path d="M22 25 52 40V60L22 45Z" fill="#ef4444"/>
-    <path d="M52 40 82 25V45L52 60Z" fill="#b91c1c"/>
-    <g fill="#ef4444" stroke="#b91c1c" stroke-width="1">
-      <path d="M46 13v5a6 3 0 0 0 12 0v-5Z"/>
-      <path d="M31 21v5a6 3 0 0 0 12 0v-5Z"/>
-      <path d="M61 21v5a6 3 0 0 0 12 0v-5Z"/>
-      <path d="M46 29v5a6 3 0 0 0 12 0v-5Z"/>
-    </g>
-    <g fill="#fca5a5">
-      <ellipse cx="52" cy="13" rx="6" ry="3"/>
-      <ellipse cx="37" cy="21" rx="6" ry="3"/>
-      <ellipse cx="67" cy="21" rx="6" ry="3"/>
-      <ellipse cx="52" cy="29" rx="6" ry="3"/>
-    </g>
+    <path d="M30 64 86 92v22L30 86Z" fill="url(#blue-front)" stroke="#1d4f9e" stroke-width="1.2"/>
+    <path d="M86 92 114 78v22l-28 14Z" fill="#174793" stroke="#123b80" stroke-width="1.2"/>
+    <path d="M58 50 114 78 86 92 30 64Z" fill="url(#blue-top)" stroke="#3979c9" stroke-width="1.2"/>
+    <path d="M32 65 86 92" fill="none" stroke="#d1eaff" stroke-width="1" opacity=".65"/>
+    <path d="M31 85 85 112" fill="none" stroke="#153c8e" stroke-width="1" opacity=".35"/>
   </g>
+  <use href="#blue-stud" x="86" y="71"/>
+  <use href="#blue-stud" x="100" y="78"/>
+  <use href="#blue-stud" x="72" y="78"/>
+  <use href="#blue-stud" x="86" y="85"/>
+
+  <!-- Upper brick follows the same stud spacing and rests on the blue brick. -->
+  <g stroke-linejoin="round">
+    <path d="M27 41 55 55v22L27 63Z" fill="url(#red-front)" stroke="#a72c27" stroke-width="1.2"/>
+    <path d="M55 55 83 41v22L55 77Z" fill="#ae2926" stroke="#85231f" stroke-width="1.2"/>
+    <path d="M55 27 83 41 55 55 27 41Z" fill="url(#red-top)" stroke="#ce4b41" stroke-width="1.2"/>
+    <path d="M28 42 55 55" fill="none" stroke="#ffd0c8" stroke-width="1" opacity=".7"/>
+    <path d="M28 62 54 75" fill="none" stroke="#8f2422" stroke-width="1" opacity=".4"/>
+  </g>
+  <use href="#red-stud" x="55" y="34"/>
+  <use href="#red-stud" x="41" y="41"/>
+  <use href="#red-stud" x="69" y="41"/>
+  <use href="#red-stud" x="55" y="48"/>
 </svg>
